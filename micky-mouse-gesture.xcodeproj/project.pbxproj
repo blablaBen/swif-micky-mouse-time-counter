@@ -1,0 +1,591 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		629ED4F92173FEA2006BB108 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 629ED4F82173FEA2006BB108 /* AppDelegate.swift */; };
+		629ED4FB2173FEA2006BB108 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 629ED4FA2173FEA2006BB108 /* ViewController.swift */; };
+		629ED4FE2173FEA2006BB108 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 629ED4FC2173FEA2006BB108 /* Main.storyboard */; };
+		629ED5002173FEA6006BB108 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 629ED4FF2173FEA6006BB108 /* Assets.xcassets */; };
+		629ED5032173FEA6006BB108 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 629ED5012173FEA6006BB108 /* LaunchScreen.storyboard */; };
+		629ED50E2173FEA6006BB108 /* micky_mouse_gestureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 629ED50D2173FEA6006BB108 /* micky_mouse_gestureTests.swift */; };
+		629ED5192173FEA6006BB108 /* micky_mouse_gestureUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 629ED5182173FEA6006BB108 /* micky_mouse_gestureUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		629ED50A2173FEA6006BB108 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 629ED4ED2173FEA1006BB108 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 629ED4F42173FEA2006BB108;
+			remoteInfo = "micky-mouse-gesture";
+		};
+		629ED5152173FEA6006BB108 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 629ED4ED2173FEA1006BB108 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 629ED4F42173FEA2006BB108;
+			remoteInfo = "micky-mouse-gesture";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		629ED4F52173FEA2006BB108 /* micky-mouse-gesture.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "micky-mouse-gesture.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		629ED4F82173FEA2006BB108 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		629ED4FA2173FEA2006BB108 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		629ED4FD2173FEA2006BB108 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		629ED4FF2173FEA6006BB108 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		629ED5022173FEA6006BB108 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		629ED5042173FEA6006BB108 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		629ED5092173FEA6006BB108 /* micky-mouse-gestureTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "micky-mouse-gestureTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		629ED50D2173FEA6006BB108 /* micky_mouse_gestureTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = micky_mouse_gestureTests.swift; sourceTree = "<group>"; };
+		629ED50F2173FEA6006BB108 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		629ED5142173FEA6006BB108 /* micky-mouse-gestureUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "micky-mouse-gestureUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		629ED5182173FEA6006BB108 /* micky_mouse_gestureUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = micky_mouse_gestureUITests.swift; sourceTree = "<group>"; };
+		629ED51A2173FEA6006BB108 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		629ED4F22173FEA2006BB108 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		629ED5062173FEA6006BB108 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		629ED5112173FEA6006BB108 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		629ED4EC2173FEA1006BB108 = {
+			isa = PBXGroup;
+			children = (
+				629ED4F72173FEA2006BB108 /* micky-mouse-gesture */,
+				629ED50C2173FEA6006BB108 /* micky-mouse-gestureTests */,
+				629ED5172173FEA6006BB108 /* micky-mouse-gestureUITests */,
+				629ED4F62173FEA2006BB108 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		629ED4F62173FEA2006BB108 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				629ED4F52173FEA2006BB108 /* micky-mouse-gesture.app */,
+				629ED5092173FEA6006BB108 /* micky-mouse-gestureTests.xctest */,
+				629ED5142173FEA6006BB108 /* micky-mouse-gestureUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		629ED4F72173FEA2006BB108 /* micky-mouse-gesture */ = {
+			isa = PBXGroup;
+			children = (
+				629ED4F82173FEA2006BB108 /* AppDelegate.swift */,
+				629ED4FA2173FEA2006BB108 /* ViewController.swift */,
+				629ED4FC2173FEA2006BB108 /* Main.storyboard */,
+				629ED4FF2173FEA6006BB108 /* Assets.xcassets */,
+				629ED5012173FEA6006BB108 /* LaunchScreen.storyboard */,
+				629ED5042173FEA6006BB108 /* Info.plist */,
+			);
+			path = "micky-mouse-gesture";
+			sourceTree = "<group>";
+		};
+		629ED50C2173FEA6006BB108 /* micky-mouse-gestureTests */ = {
+			isa = PBXGroup;
+			children = (
+				629ED50D2173FEA6006BB108 /* micky_mouse_gestureTests.swift */,
+				629ED50F2173FEA6006BB108 /* Info.plist */,
+			);
+			path = "micky-mouse-gestureTests";
+			sourceTree = "<group>";
+		};
+		629ED5172173FEA6006BB108 /* micky-mouse-gestureUITests */ = {
+			isa = PBXGroup;
+			children = (
+				629ED5182173FEA6006BB108 /* micky_mouse_gestureUITests.swift */,
+				629ED51A2173FEA6006BB108 /* Info.plist */,
+			);
+			path = "micky-mouse-gestureUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		629ED4F42173FEA2006BB108 /* micky-mouse-gesture */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 629ED51D2173FEA6006BB108 /* Build configuration list for PBXNativeTarget "micky-mouse-gesture" */;
+			buildPhases = (
+				629ED4F12173FEA2006BB108 /* Sources */,
+				629ED4F22173FEA2006BB108 /* Frameworks */,
+				629ED4F32173FEA2006BB108 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "micky-mouse-gesture";
+			productName = "micky-mouse-gesture";
+			productReference = 629ED4F52173FEA2006BB108 /* micky-mouse-gesture.app */;
+			productType = "com.apple.product-type.application";
+		};
+		629ED5082173FEA6006BB108 /* micky-mouse-gestureTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 629ED5202173FEA6006BB108 /* Build configuration list for PBXNativeTarget "micky-mouse-gestureTests" */;
+			buildPhases = (
+				629ED5052173FEA6006BB108 /* Sources */,
+				629ED5062173FEA6006BB108 /* Frameworks */,
+				629ED5072173FEA6006BB108 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				629ED50B2173FEA6006BB108 /* PBXTargetDependency */,
+			);
+			name = "micky-mouse-gestureTests";
+			productName = "micky-mouse-gestureTests";
+			productReference = 629ED5092173FEA6006BB108 /* micky-mouse-gestureTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		629ED5132173FEA6006BB108 /* micky-mouse-gestureUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 629ED5232173FEA6006BB108 /* Build configuration list for PBXNativeTarget "micky-mouse-gestureUITests" */;
+			buildPhases = (
+				629ED5102173FEA6006BB108 /* Sources */,
+				629ED5112173FEA6006BB108 /* Frameworks */,
+				629ED5122173FEA6006BB108 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				629ED5162173FEA6006BB108 /* PBXTargetDependency */,
+			);
+			name = "micky-mouse-gestureUITests";
+			productName = "micky-mouse-gestureUITests";
+			productReference = 629ED5142173FEA6006BB108 /* micky-mouse-gestureUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		629ED4ED2173FEA1006BB108 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1000;
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = "Pattarasai Markpeng";
+				TargetAttributes = {
+					629ED4F42173FEA2006BB108 = {
+						CreatedOnToolsVersion = 10.0;
+					};
+					629ED5082173FEA6006BB108 = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = 629ED4F42173FEA2006BB108;
+					};
+					629ED5132173FEA6006BB108 = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = 629ED4F42173FEA2006BB108;
+					};
+				};
+			};
+			buildConfigurationList = 629ED4F02173FEA2006BB108 /* Build configuration list for PBXProject "micky-mouse-gesture" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 629ED4EC2173FEA1006BB108;
+			productRefGroup = 629ED4F62173FEA2006BB108 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				629ED4F42173FEA2006BB108 /* micky-mouse-gesture */,
+				629ED5082173FEA6006BB108 /* micky-mouse-gestureTests */,
+				629ED5132173FEA6006BB108 /* micky-mouse-gestureUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		629ED4F32173FEA2006BB108 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				629ED5032173FEA6006BB108 /* LaunchScreen.storyboard in Resources */,
+				629ED5002173FEA6006BB108 /* Assets.xcassets in Resources */,
+				629ED4FE2173FEA2006BB108 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		629ED5072173FEA6006BB108 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		629ED5122173FEA6006BB108 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		629ED4F12173FEA2006BB108 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				629ED4FB2173FEA2006BB108 /* ViewController.swift in Sources */,
+				629ED4F92173FEA2006BB108 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		629ED5052173FEA6006BB108 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				629ED50E2173FEA6006BB108 /* micky_mouse_gestureTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		629ED5102173FEA6006BB108 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				629ED5192173FEA6006BB108 /* micky_mouse_gestureUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		629ED50B2173FEA6006BB108 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 629ED4F42173FEA2006BB108 /* micky-mouse-gesture */;
+			targetProxy = 629ED50A2173FEA6006BB108 /* PBXContainerItemProxy */;
+		};
+		629ED5162173FEA6006BB108 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 629ED4F42173FEA2006BB108 /* micky-mouse-gesture */;
+			targetProxy = 629ED5152173FEA6006BB108 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		629ED4FC2173FEA2006BB108 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				629ED4FD2173FEA2006BB108 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		629ED5012173FEA6006BB108 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				629ED5022173FEA6006BB108 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		629ED51B2173FEA6006BB108 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		629ED51C2173FEA6006BB108 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		629ED51E2173FEA6006BB108 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 49XU34WH7L;
+				INFOPLIST_FILE = "micky-mouse-gesture/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "pattarasai.cmu.micky-mouse-gesture";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		629ED51F2173FEA6006BB108 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 49XU34WH7L;
+				INFOPLIST_FILE = "micky-mouse-gesture/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "pattarasai.cmu.micky-mouse-gesture";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		629ED5212173FEA6006BB108 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 49XU34WH7L;
+				INFOPLIST_FILE = "micky-mouse-gestureTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "pattarasai.cmu.micky-mouse-gestureTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/micky-mouse-gesture.app/micky-mouse-gesture";
+			};
+			name = Debug;
+		};
+		629ED5222173FEA6006BB108 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 49XU34WH7L;
+				INFOPLIST_FILE = "micky-mouse-gestureTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "pattarasai.cmu.micky-mouse-gestureTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/micky-mouse-gesture.app/micky-mouse-gesture";
+			};
+			name = Release;
+		};
+		629ED5242173FEA6006BB108 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 49XU34WH7L;
+				INFOPLIST_FILE = "micky-mouse-gestureUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "pattarasai.cmu.micky-mouse-gestureUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "micky-mouse-gesture";
+			};
+			name = Debug;
+		};
+		629ED5252173FEA6006BB108 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 49XU34WH7L;
+				INFOPLIST_FILE = "micky-mouse-gestureUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "pattarasai.cmu.micky-mouse-gestureUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "micky-mouse-gesture";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		629ED4F02173FEA2006BB108 /* Build configuration list for PBXProject "micky-mouse-gesture" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				629ED51B2173FEA6006BB108 /* Debug */,
+				629ED51C2173FEA6006BB108 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		629ED51D2173FEA6006BB108 /* Build configuration list for PBXNativeTarget "micky-mouse-gesture" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				629ED51E2173FEA6006BB108 /* Debug */,
+				629ED51F2173FEA6006BB108 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		629ED5202173FEA6006BB108 /* Build configuration list for PBXNativeTarget "micky-mouse-gestureTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				629ED5212173FEA6006BB108 /* Debug */,
+				629ED5222173FEA6006BB108 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		629ED5232173FEA6006BB108 /* Build configuration list for PBXNativeTarget "micky-mouse-gestureUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				629ED5242173FEA6006BB108 /* Debug */,
+				629ED5252173FEA6006BB108 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 629ED4ED2173FEA1006BB108 /* Project object */;
+}
