@@ -40,7 +40,6 @@
                                     <constraint firstAttribute="height" constant="38" id="zaZ-30-XIV"/>
                                 </constraints>
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" title="Start"/>
                                 <connections>
                                     <action selector="onClickStartStop:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qIQ-aF-6DB"/>
                                 </connections>
@@ -69,6 +68,7 @@
                     <connections>
                         <outlet property="actionBtn" destination="ORb-EE-MAB" id="XCt-YG-bv1"/>
                         <outlet property="instructionLabel" destination="jeu-RX-kXW" id="pFg-Wx-Q9u"/>
+                        <outlet property="mickyImage" destination="IQD-Ue-aIv" id="eDk-AE-wc4"/>
                         <outlet property="timeCounter" destination="Oi5-JU-MbU" id="6CE-ig-RtZ"/>
                     </connections>
                 </viewController>

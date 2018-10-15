@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AudioToolbox
 
 class ViewController: UIViewController {
     private var gestureStartPoint: CGPoint!;
@@ -21,11 +22,14 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var instructionLabel: UILabel!
     @IBOutlet weak var actionBtn: UIButton!
+    @IBOutlet weak var mickyImage: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        setActionToGreenBtn();
         instructionLabel.text = "Swipe Left/Right to add/decrease time"
+        calculateAndUpdateTimerLabel();
     }
 
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -45,9 +49,9 @@ class ViewController: UIViewController {
         
         if(deltaX >= minimumGestureLength && deltaY <= maximumVarience) {
             if(Float(gestureStartPoint.x - currentPosition.x) <= 0.0) {
-                timeSecCount = timeSecCount + 10;
+                timeSecCount = timeSecCount + 1;
             } else {
-                timeSecCount = timeSecCount - 10;
+                timeSecCount = timeSecCount - 1;
             }
             if(timeSecCount >= 60) {
                 timeMinCount = timeMinCount + 1;
@@ -67,11 +71,11 @@ class ViewController: UIViewController {
         if(!isCounting) {
             runTimer();
             isCounting = true;
-            actionBtn.titleLabel!.text = "Tab to Start"
+            setActionToRedBtn();
         } else {
             stopTimer();
             isCounting = false;
-            actionBtn.titleLabel!.text = "Tab to Stop"
+            setActionToGreenBtn();
         }
     }
     
@@ -86,6 +90,18 @@ class ViewController: UIViewController {
     
     @objc func updateTimer() {
         timeSecCount = timeSecCount - 1;
+        if(timeSecCount == 0 && timeMinCount == 0) {
+            let alert = UIAlertController(title: "Micky Alert", message: "Time Out", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: "Default action"), style: .default, handler: { _ in
+                NSLog("The \"OK\" alert occured.")
+            }))
+            self.present(alert, animated: true, completion: nil)
+        AudioServicesPlaySystemSound(SystemSoundID(kSystemSoundID_Vibrate))
+            
+            stopTimer();
+            isCounting = false;
+            setActionToGreenBtn();
+        }
         calculateAndUpdateTimerLabel();
     }
     
@@ -98,6 +114,17 @@ class ViewController: UIViewController {
         timeCounter.text = "\(String(format: "%02d", timeMinCount)):\(String(format: "%02d", timeSecCount))";
     }
     
+    func setActionToGreenBtn() {
+        mickyImage.image = UIImage(named:"start");
+        actionBtn.setTitle("Start", for: .normal);
+        actionBtn.backgroundColor = UIColor.green;
+    }
+    
+    func setActionToRedBtn() {
+        mickyImage.image = UIImage(named:"stop");
+        actionBtn.setTitle("Stop", for: .normal);
+        actionBtn.backgroundColor = UIColor.red;
+    }
     
 
 }
