@@ -23,15 +23,37 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jeu-RX-kXW">
+                                <rect key="frame" x="160" y="524" width="55" height="28"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="28" id="VAd-gt-am3"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ORb-EE-MAB">
+                                <rect key="frame" x="146" y="195" width="82" height="38"/>
+                                <state key="normal" title="Start"/>
+                                <connections>
+                                    <action selector="onClickStartStop:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qIQ-aF-6DB"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="Oi5-JU-MbU" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="9T8-R8-hvX"/>
+                            <constraint firstItem="Oi5-JU-MbU" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" constant="-10" id="9T8-R8-hvX"/>
+                            <constraint firstItem="ORb-EE-MAB" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="VOH-wD-Bon"/>
+                            <constraint firstItem="ORb-EE-MAB" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="175" id="den-Ov-Zjg"/>
                             <constraint firstItem="Oi5-JU-MbU" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="jdo-mi-ul2"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="jeu-RX-kXW" secondAttribute="bottom" constant="115" id="rYi-Qr-Ubh"/>
+                            <constraint firstItem="jeu-RX-kXW" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="z0e-rZ-Mey"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="actionBtn" destination="ORb-EE-MAB" id="XCt-YG-bv1"/>
+                        <outlet property="instructionLabel" destination="jeu-RX-kXW" id="pFg-Wx-Q9u"/>
                         <outlet property="timeCounter" destination="Oi5-JU-MbU" id="6CE-ig-RtZ"/>
                     </connections>
                 </viewController>

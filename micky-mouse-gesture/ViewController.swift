@@ -10,19 +10,22 @@ import UIKit
 
 class ViewController: UIViewController {
     private var gestureStartPoint: CGPoint!;
-    private let minimumGestureLength = Float(40);
+    private let minimumGestureLength = Float(50);
     private let maximumVarience = Float(5);
     
     @IBOutlet weak var timeCounter: UILabel!;
     var timeMinCount = 1;
     var timeSecCount = 0;
-    var timer = Timer();
+    var timer: Timer = Timer();
     var isCounting = false;
     
+    @IBOutlet weak var instructionLabel: UILabel!
+    @IBOutlet weak var actionBtn: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        instructionLabel.text = "Swipe Left/Right to add/decrease time"
     }
 
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -60,21 +63,25 @@ class ViewController: UIViewController {
         }
     }
     
-    override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
-        let touches: NSSet! = event?.allTouches as! NSSet;
-        let touch = touches.anyObject() as! UITouch;
-        let currentPosition = touch.location(in: self.view);
-        
-        let deltaX = fabsf(Float(gestureStartPoint.x - currentPosition.x));
-        let deltaY = fabsf(Float(gestureStartPoint.y - currentPosition.y));
-        
-        if(deltaX <= minimumGestureLength && deltaY <= minimumGestureLength) {
+    @IBAction func onClickStartStop(_ sender: Any) {
+        if(!isCounting) {
             runTimer();
+            isCounting = true;
+            actionBtn.titleLabel!.text = "Tab to Start"
+        } else {
+            stopTimer();
+            isCounting = false;
+            actionBtn.titleLabel!.text = "Tab to Stop"
         }
     }
     
     func runTimer() {
         timer = Timer.scheduledTimer(timeInterval: 1, target: self,   selector: (#selector(ViewController.updateTimer)), userInfo: nil, repeats: true)
+       
+    }
+    
+    func stopTimer() {
+        timer.invalidate();
     }
     
     @objc func updateTimer() {
