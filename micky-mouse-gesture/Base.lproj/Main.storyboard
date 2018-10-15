@@ -32,19 +32,34 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ORb-EE-MAB">
-                                <rect key="frame" x="146" y="195" width="82" height="38"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ORb-EE-MAB">
+                                <rect key="frame" x="107" y="454" width="161" height="38"/>
+                                <color key="backgroundColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="161" id="8tW-gA-18N"/>
+                                    <constraint firstAttribute="height" constant="38" id="zaZ-30-XIV"/>
+                                </constraints>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Start"/>
                                 <connections>
                                     <action selector="onClickStartStop:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qIQ-aF-6DB"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="start" translatesAutoresizingMaskIntoConstraints="NO" id="IQD-Ue-aIv">
+                                <rect key="frame" x="107" y="108" width="161" height="161"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="IQD-Ue-aIv" secondAttribute="height" multiplier="1:1" id="1lv-lf-gwF"/>
+                                    <constraint firstAttribute="width" constant="161" id="6Lc-YR-2go"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="Oi5-JU-MbU" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" constant="-10" id="9T8-R8-hvX"/>
+                            <constraint firstItem="IQD-Ue-aIv" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="9oN-Dw-W2m"/>
+                            <constraint firstItem="IQD-Ue-aIv" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="88" id="Ovt-4g-dWg"/>
                             <constraint firstItem="ORb-EE-MAB" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="VOH-wD-Bon"/>
-                            <constraint firstItem="ORb-EE-MAB" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="175" id="den-Ov-Zjg"/>
+                            <constraint firstItem="ORb-EE-MAB" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="434" id="den-Ov-Zjg"/>
                             <constraint firstItem="Oi5-JU-MbU" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="jdo-mi-ul2"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="jeu-RX-kXW" secondAttribute="bottom" constant="115" id="rYi-Qr-Ubh"/>
                             <constraint firstItem="jeu-RX-kXW" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="z0e-rZ-Mey"/>
@@ -62,4 +77,7 @@
             <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="start" width="225" height="225"/>
+    </resources>
 </document>
