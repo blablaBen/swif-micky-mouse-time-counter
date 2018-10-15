@@ -60,7 +60,7 @@ class ViewController: UIViewController {
             
             if(timeSecCount < 0) {
                 timeMinCount = timeMinCount-1 <= 0 ? 0 : timeMinCount-1;
-                timeSecCount = 0;
+                timeSecCount = 59;
             }
             
             timeCounter.text = "\(String(format: "%02d", timeMinCount)):\(String(format: "%02d", timeSecCount))";
@@ -73,15 +73,18 @@ class ViewController: UIViewController {
             isCounting = true;
             setActionToRedBtn();
         } else {
-            stopTimer();
-            isCounting = false;
-            setActionToGreenBtn();
+            processStopTimer();
         }
     }
     
     func runTimer() {
         timer = Timer.scheduledTimer(timeInterval: 1, target: self,   selector: (#selector(ViewController.updateTimer)), userInfo: nil, repeats: true)
-       
+    }
+    
+    func processStopTimer() {
+        stopTimer();
+        isCounting = false;
+        setActionToGreenBtn();
     }
     
     func stopTimer() {
@@ -91,18 +94,19 @@ class ViewController: UIViewController {
     @objc func updateTimer() {
         timeSecCount = timeSecCount - 1;
         if(timeSecCount == 0 && timeMinCount == 0) {
-            let alert = UIAlertController(title: "Micky Alert", message: "Time Out", preferredStyle: .alert)
-            alert.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: "Default action"), style: .default, handler: { _ in
-                NSLog("The \"OK\" alert occured.")
-            }))
-            self.present(alert, animated: true, completion: nil)
-        AudioServicesPlaySystemSound(SystemSoundID(kSystemSoundID_Vibrate))
-            
-            stopTimer();
-            isCounting = false;
-            setActionToGreenBtn();
+            showTimeOutAlert();
+            processStopTimer();
         }
         calculateAndUpdateTimerLabel();
+    }
+    
+    func showTimeOutAlert() {
+        let alert = UIAlertController(title: "Micky Alert", message: "Time Out", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: "Default action"), style: .default, handler: { _ in
+            NSLog("The \"OK\" alert occured.")
+        }))
+        self.present(alert, animated: true, completion: nil)
+        AudioServicesPlaySystemSound(SystemSoundID(kSystemSoundID_Vibrate))
     }
     
     func calculateAndUpdateTimerLabel() {
